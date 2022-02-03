@@ -1,0 +1,41 @@
+git reset <X>? --> Removes from staging area (after add)... All or some?
+
+git log --> Remeber to use this to see what commits have been made
+
+git diff --> remeber to use before adding files
+
+git pull --> always use before you push!!! (maybe even bfore adding?)
+
+git branch <X> --> creates new
+
+git branch --> no arguments mean it shows them.
+
+git checkout <X (remote)> --> switches
+
+
+
+------------------ When branching -----------------
+
+
+
+(For inital commit/push to new branch)
+git push -u origin <name>   
+	--> pushing to remote (-u associates local and remote) origin represents where we push to <http://...>
+
+git merge --> when called prior to merge, this always shows braches with changes to be merged
+(or maybe git brnach merge.... try both)
+
+git merge <X> -->when called with argument merges branch <X> into the one you are currently on.
+  
+git push origin main --> after merging on local repo remember also to move changes to remote
+
+git branch --merged --> shows all branches merged to current branch
+
+git branch -a --> shows all branches we are rocking at the moment
+
+-----------deleting branches
+
+$ git branch -d <work-local-changes> ---> deletes local branch
+
+
+git push origin --delete <work-local-changes> --> deletes branch on remote
